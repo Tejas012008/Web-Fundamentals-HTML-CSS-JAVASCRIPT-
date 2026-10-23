@@ -1,0 +1,44 @@
+body{
+    font-family: cursive;
+    background-color: rgb(78, 220, 233);
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h{
+    font-size: 36px;
+    color: #2111d3;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 18px;
+    color: #333;
+}
+
+.card{
+    max-width: 500px;
+    background-color: hsl(0, 86%, 60%);
+    border-radius: 25px;
+    box-shadow: 0 4px 12x rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(34, 15, 237, 0.87);
+}
+
+.button {
+    font-family: cursive;
+    background-color: hsl(270, 92%, 47%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(39, 12, 215, 0.916);
+}
+
+button:hover {
+    background-color: hsl(270, 88%, 16%);
+}

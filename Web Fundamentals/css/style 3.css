@@ -1,0 +1,122 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(1, 2, 7);
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h{
+    font-size: 36px;
+    color: #2111d3;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 12px;
+    color: #333;
+}
+
+#profile-info{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#profile-info[hidden],
+.skill-grid[hidden]{
+    display: none;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    background-color: hsl(180, 15%, 90%);
+    border-radius: 25px;
+    border: 2px solid hsl(180, 90%, 49%);
+    border-width: 10px;
+    padding: 25px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(6, 184, 234, 0.87);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#profile-image{
+    flex: 0 0 36%;
+}
+
+#profile-image img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card > div:last-child{
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-name h1{
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.profile-name{
+    padding: 2px;
+    color: #0e0000;
+    margin-bottom: 10px;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, max-content));
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.skill-grid li{
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: #294b9b;
+    color: white;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.welcomebtn{
+    padding: 8px 14px;
+    border: 1px solid #294b9b;
+    border-radius: 6px;
+    background: white;
+    color: #172c61;
+    cursor: pointer;
+}
+
+.welcomebtn:hover{
+    background: #e8edfa;
+}
+
+@media (max-width: 650px){
+    .card{
+        flex-direction: column;
+    }
+
+    #profile-image{
+        width: 100%;
+        max-width: 320px;
+        flex-basis: auto;
+    }
+
+    .skill-grid{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+    }
+}
